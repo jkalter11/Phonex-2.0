@@ -30,7 +30,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148916702-1"></script>
     <!--<script src="./js/mdb.min.js"></script>-->
-  </head>  
+ 
+	  <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('42ctc6s594dn');
+</script>
+<!-- End of Async Drift Code -->
+	 </head>  
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8J9MZV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -81,23 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var scr=document.getElementsByTagName('script')[0];scr.parentNode.appendChild(s, scr);
     })();
 </script>
-  <!-- ClickDesk Live Chat Service for websites -->
-<script type='text/javascript'>
-var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyEgsSBXVzZXJzGICA8IWZ34QJDA');
-if(document.location.hostname != 'localhost'){
-	var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
-	'http://my.clickdesk.com/clickdesk-ui/browser/');
-	var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-}else{
-	var glcpath = 'http://localhost:8888/clickdesk-ui/browser/';
-	var glcp = 'http://';
-}
-var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
-glcspt.async = true; glcspt.src = glcpath + 'livechat-cloud-new.js';
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
-</script>
-<!-- End of ClickDesk -->
-</body>
+ </body>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8J9MZV"
